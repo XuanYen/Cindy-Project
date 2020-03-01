@@ -1,0 +1,84 @@
+.slideshow-container{
+  height: auto;
+  box-shadow: 0 20px 50px -25px rgba(0, 0, 0, 1);
+}
+.mySlides{
+  display: none;
+  width: 100vw;
+  margin: 0px;
+}
+
+section{
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.middle{
+  background-image: url(../img/index/home_about_bg_2.jpg);
+  height: 100%;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.cindystory,.cindychannel{
+  width: 50%;
+  padding: 80px;
+}
+.cindychannel iframe{
+  width: 100%;
+  height: 300px;
+}
+
+.cindystory p {
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 100;
+  text-align: justify;
+  margin: 20px 0px;
+}
+.content-part2{
+  padding: 6rem 0px;
+  height: auto;
+}
+
+.homelist{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-height: 350px;
+}
+.homelist .iitem{
+  width: 50%;
+  background-position: center center;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+  filter: grayscale(100%);
+  transition: .5s ease-in-out;
+}
+.iitem:hover{
+  filter: grayscale(0);
+}
+.iitem h2{
+  margin-top: 2rem;  
+}
+.btn-xt{
+  position: absolute;
+  bottom: 45%;
+  left: 45%;
+}
+
+.left{
+  padding-right: 1rem;
+  background-image: url(../img/index/home-list/home_explo_bg_2.jpg);
+}
+.right{
+  background-image: url(../img/index/home-list/home_blog_bg_2.jpg);
+}
+
+.content-part4{ 
+  padding: 1.5rem;
+  min-height: 100vh;
+}
+

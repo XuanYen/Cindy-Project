@@ -1,0 +1,89 @@
+#headnavbar{
+    z-index: 999;
+}
+header{
+    min-height: 100px;
+}
+main{
+    padding: 2rem 0;
+}
+.rowtitle{
+  background: #b1b2c3;
+  color: #404040;
+  display: flex;
+  list-style-type: none;
+  padding: 5px 5vw;
+}
+.banner img{
+    width: 100%;
+}
+.title{
+    font-size: 24px;
+    margin: 0px 10px;
+}
+.tintucuudai{
+    flex-wrap: wrap;
+}
+.itemtt{
+  filter: grayscale(100%);
+  transition: .5s ease-in-out;
+}
+.itemtt:hover{
+   filter: grayscale(0);
+}
+.itemtt:hover figure{
+    border: 2px solid black;
+  }
+.itemtt:hover a{
+    color: rgb(66, 65, 65);
+    font-weight: bold;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination a {
+  width: 2rem;
+  height: 2rem;
+  box-shadow: inset 0 0 0 1px #e1e1e1;
+  color: #e1e1e1;
+  font-size: 0.8rem;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #cbcad9;
+    color: #333;
+    font-weight: 700;
+    border: 1px solid #cbcad9;
+}
+
+.pagination a:hover:not(.active) {
+    text-decoration: underline;
+}
+.seemore a{
+    color: #999;
+    box-shadow: inset 0 0 0 1px #cdcdcd;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.seemore:hover a{
+    background-color: #ece5e5;
+    color: rgb(66, 65, 65);;
+}
+@media screen and (max-width:768px) {
+.topbar{
+  display: none !important;
+}
+.navbar>.fa-bars{
+    top: .5rem !important;
+    right: 3rem !important;
+    font-size: 1.5rem !important;
+}
+}
+  

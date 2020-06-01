@@ -1,4 +1,6 @@
 # Cindy-Project
+# Link firebase
+https://cindy-perfume.web.app/
 ## 1.Tech stack: HTML,CSS,JS
 ## 2. Description
 Project này là trang web giới thiệu về nhãn hiệu nước hoa nổi tiếng. Cung cấp thông tin tổng quan về sự ra đời dòng nước hoa này, timeline phát triển, các sản phẩm nổi tiếng,..

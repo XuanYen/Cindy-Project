@@ -1,0 +1,11 @@
+{
+    "root": "dist/",
+    "clean_urls": true,
+    "error_page": "404.html",
+    "routes": {
+        "/img/*": "/img/",
+        "/js/*.js": "/js/",
+        "/css/*.css": "/css/",
+        "/**": "index.html"
+    }
+}

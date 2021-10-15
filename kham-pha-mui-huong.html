@@ -13,19 +13,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <script src="https://kit.fontawesome.com/9f2fdcf7f8.js"></script>
-
 </head>
 
 <body>
-
-    <div class="messenger">
-        <i class="fab fa-facebook-messenger"></i>
-    </div>
     <header>
         <div id="headnavbar" id="top-page">
             <div class="logobrand">
-                <a href="index.html"><img class="logo" src="img/index/logo.png" alt=""></a>
+                <a href="#"><img class="logo" src="img/index/logo.png" alt=""></a>
             </div>
             <div class="menunav">
                 <div class="topbar">
@@ -41,19 +35,14 @@
                                     onclick="CloseMenu()"></i></a>
                         </li>
                         <li><input type="search" name="" id="" placeholder="Tìm kiếm"></li>
-                        <li class=" nav-item"><a class="nav-link" href="ve-cindy.html">Về Cindy</a>
+                        <li class=" nav-item"><a class="nav-link" href="ve-cindy.html">Về Cindy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="san-pham.html">Sản phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kham-pha-mui-huong.html">Khám phá mùi hương</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="san-pham.html">Sản
-                                phẩm</a></li>
-                        <li class="nav-item"><a class="nav-link" href="kham-pha-mui-huong.html">Khám
-                                phá mùi hương</a></li>
                         <li class="nav-item"><a class="nav-link" href="beauty-blogger-review.html">Beauty blogger
                                 review</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="tin-tuc-uu-dai.html">Tin tức -
-                                Ưu đãi</a></li>
-                        <li class="nav-item"><a class="nav-link" href="he-thong-cua-hang.html">Hệ
-                                thống phân phối</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tin-tuc-uu-dai.html">Tin tức - Ưu đãi</a></li>
                         <li class="nav-item"><a class="nav-link" href="lien-he.html">Liên hệ</a></li>
                         <li><a href="tel:+1800545454"><span class="lnr lnr-phone-handset"></span>1800 54 54 54</a></li>
                     </ul>
@@ -66,12 +55,14 @@
         <section class="FQA">
             <div class="row">
                 <div class="col">
-                    <h2 class="scc-title">Khám phá mùi hương</h2>
+                    <div class="wrapper-typing" style='align-items: center'>
+                        <h2 class=" typing-demo" style='width: 320px'>Khám phá mùi hương</h2>
+                    </div>
                     <p>Hãy để Cindy giúp bạn tìm ra mùi hương phù hợp với <strong>tính cách của bạn!</strong></p>
                     <div class="seemore" onclick="plusSlides(1)"><a href="#">Bắt đầu ngay</a></div>
                 </div>
                 <div class="col">
-                    <img src="img/khamphamuihuong/hinh-bloom-kham-pha-mui-huong.png" alt="">
+                    <img id='img-roll' src="img/khamphamuihuong/hinh-bloom-kham-pha-mui-huong.png" alt="">
                 </div>
             </div>
         </section>
@@ -99,7 +90,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <div class=" boxzoom"><img src="img/khamphamuihuong/checkout_icon_3.png" alt=""></div>
+                    <div class="boxzoom"><img src="img/khamphamuihuong/checkout_icon_3.png" alt=""></div>
                     <figcaption onclick="ShowTab(event)">
                         <p>Từ 29-35 tuổi</p>
                     </figcaption>
@@ -230,10 +221,12 @@
                 <li class="quesitem"><a href="#">4</a></li>
                 <li class="quesitem quesactive"><a href="#">Kết quả</a></li>
             </ul>
-            <h2 class="scc-title">Hương nước hoa dành riêng cho bạn là:</h2>
+            <div class="wrapper-typing">
+                <h2 class="scc-title">Hương nước hoa dành riêng cho bạn là:</h2>
+            </div>
             <div class="row">
                 <div class="col">
-                    <img src="img/khamphamuihuong/aroma-50ml.png" alt="">
+                    <img id='answer-image' src="img/khamphamuihuong/aroma-50ml.png" alt="AnswerImage">
                 </div>
                 <div class="col">
                     <h5 class="scc-title">Nước hoa Cindy bloom - AROMA FLOWER 50ML</h5>
@@ -268,34 +261,26 @@
     <footer>
         <article>
             <h4>Về Cindy</h4>
-            <p><a href="ve-cindy.html">Câu chuyện Cindy</a></p>
-            <p><a href="">Giai đoạn phát triển</a></p>
-            <p><a href="">Cindy channel</a></p>
-        </article>
-        <article>
-            <h4>Sản phẩm</h4>
-            <p><a href="">Cindy Bloom</a></p>
-            <p><a href="">CINDY</a></p>
+            <p><a href="/ve-cindy.html#story">Câu chuyện Cindy</a></p>
+            <p><a href="/ve-cindy.html#develop-stage">Giai đoạn phát triển</a></p>
+            <p><a href="/ve-cindy.html#channel">Cindy channel</a></p>
         </article>
         <article>
             <h4>Liên kết nhanh</h4>
-            <p><a href="">Beauty Blogger review</a></p>
-            <p><a href="">Tin tức - Ưu đãi</a></p>
-            <p><a href="">Hệ thống phân phối</a></p>
-            <p><a href="">Liên hệ</a></p>
+            <p><a href="/beauty-blogger-review.html">Beauty Blogger review</a></p>
+            <p><a href="/tin-tuc-uu-dai.html">Tin tức - Ưu đãi</a></p>
+            <p><a href="/lien-he.html">Liên hệ</a></p>
         </article>
         <article>
             <h4>Đăng ký nhận bảng tin</h4>
-            <input type="text" name="" id="" placeholder="Địa chỉ Email">
-            <div class="social">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-youtube-square"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-google-plus"></i></a>
+            <div class="social-menu">
+                <ul>
+                    <li><a href="#"><i class="fab fa-github"></i></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-codepen"></i></a></li>
+                </ul>
             </div>
-        </article>
-        <article>
-            <h4>Tuyển dụng</h4>
         </article>
     </footer>
     <div class="copyright">
@@ -304,6 +289,7 @@
     <script src="js/scroll_vecindy.js"></script>
     <script src="js/FQA_khamphamuihuong.js"></script>
     <script src="js/togglemenu.js"></script>
+    <script src="https://kit.fontawesome.com/9f2fdcf7f8.js"></script>
 </body>
 
 </html>

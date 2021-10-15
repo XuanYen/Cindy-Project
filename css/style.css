@@ -28,24 +28,35 @@ img{
   overflow: auto;
   padding: 10px 2rem;
   box-shadow: 0px 0px 10px grey;
+  height: 100px;
 }
 .fade {
-animation: fade 5s;
+  animation: fade 5s;
 }
 @keyframes fade {
   0% {opacity: 0.2} 
   50% {opacity: 1}
   100%{opacity: 0.2}
   }
+
 .logobrand{
   margin-top: 0.5rem;
   float: left;
   width: 20%;
-  transition:all 1.2s ease-in-out;
+  transform: rotateX(40deg);
+  animation: rotateX 2s infinite;
+  animation-direction: alternate;
 }
-.logobrand:hover{
-  transform:rotate(720deg) scale(1.0);
+
+@keyframes rotateX {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(50deg);
+  }
 }
+
 .topbar{
   position: relative;
   text-align: right;
@@ -111,34 +122,27 @@ a:hover {
   color: #333;
   font-weight: bold;
 }
-
 .seemore{
-text-align: center;
+  text-align: center;
 }
-.seemore a{
-position: relative;
-transform: translateZ(0);
-transition: all 0.2s ease;
-box-shadow: 0 5px 15px 0 rgba(0,0,0,.05);
-border-radius: 25px;
-background-color: white;
-cursor: pointer;
-font-weight: 700;
-padding: 10px 40px;
-text-decoration: none;
-font-size: 0.8rem;
-color: #404040;
-text-transform: uppercase;
-display: inline-block;
-transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1);
-
-}
-.seemore a:hover{
-  background-color: rgb(218, 209, 209);
-  top: -10px;
-  box-shadow: 0px 20px 30px rgba(20, 20, 20, 0.2);
-  transform: rotateX(20deg);
-}
+.seemore>a{
+  text-align: center;
+  position: relative;
+  transform: translateZ(0);
+  transition: all 0.2s ease;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,.05);
+  border-radius: 25px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 40px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #404040;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: .5s cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
 
 .col{
 max-width: 50%;
@@ -155,13 +159,13 @@ text-align: center;
 margin: 10px;
 }
 .scc-title {
-font-size: 2rem;
-line-height: 2rem;
-color: #333;
-font-weight: 700;
-margin-bottom: 2rem;
-text-transform: uppercase;
-text-align: center;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
 }
 .scc-title:hover {
   color: #444444;
@@ -180,11 +184,11 @@ text-align: center;
 .btn-xct{
   display: none;
   position: absolute;
-  background-color: #d0c8c8;
+  background-color: #cbcad9;
   bottom: 15%;
   left: 18%;
   font-weight: 400;
-  box-shadow: 5px 5px 5px #afafb1;
+  color: #404040;
   border-radius: 20px;
   padding: 5px 40px;
   text-transform: uppercase;
@@ -240,12 +244,12 @@ text-align: center;
 }
 
 .itemtt:hover:before {
-  transform: rotate(20deg);
+  transform: rotate(10deg);
   box-shadow: 0 2px 20px rgba(48, 142, 133,.2);
 }
 
 .itemtt:hover:after {
-  transform: rotate(10deg);
+  transform: rotate(5deg);
   box-shadow: 0 2px 20px rgba(48, 142, 133,.2);
 }
 .itemtt figure {
@@ -315,32 +319,54 @@ article a:hover{
   text-decoration: underline;
 }
 /* Social media */
-.social{
-  margin-top: 1rem;
+.social-menu ul{
+  display: flex;
+  transform: translateX(-50px);
 }
-.social a{
-  margin-right: .5rem;
+.social-menu ul li{
+  list-style: none;
+  margin: 0 0 0 15px;
+  
 }
-.fab {
-  font-size: 1.8rem;
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
 }
 
-.fab:hover {
-  opacity: 0.7;
+.social-menu ul li .fab:hover{
+    color: #fff;
 }
-.fa-facebook {
-  color: #3a76c9;
-}
-.fa-youtube-square {
-  color: #eb3749;
-}
-.fa-instagram {
-  color: #333;
 
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
 }
-.fa-google-plus{
-  color: #e14b23;
-} 
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #000;
+}
 /* Copyright */
 .copyright {
   padding: 1rem;
@@ -369,27 +395,14 @@ article a:hover{
   color: #444;
   cursor: pointer;
   border-radius: 2px;
-  transition: opacity .2s ease-out;
+  transition: opacity .5s ease-out;
   padding: .25rem .5rem;
   }
-/* Messenger */
-.messenger{
-  z-index: 900;
-  position: fixed;
-  bottom: 5rem;
-  right: 3rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  text-align: center;
-  line-height: 3.4rem;
-  border-radius: 50%;
-  background: white;
-  box-shadow: 0px 0px 10px grey;
-}
-.fa-facebook-messenger{
-  color: #4c6ef5;
-}
+
 /* Amination for navbar */
+.nav{
+  justify-content: flex-end;
+}
 .nav li {
   position: relative;
 }
@@ -409,4 +422,28 @@ article a:hover{
   .navbar ul li a:hover:after {
   width: 90%;
 }
+.wrapper-typing{
+  display: flex;
+  justify-content: center;
+}
+.typing-demo {
+  width: 220px;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
 
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}

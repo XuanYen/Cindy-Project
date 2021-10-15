@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/Icons8-Ios7-Logos-Large-Icons.ico">
+    <title>Beauty Blogger Review - Cindy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <script src="https://kit.fontawesome.com/9f2fdcf7f8.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="headnavbar" id="top-page">
+            <div class="logobrand">
+                <a href="/index.html"><img class="logo" src="img/index/logo.png" alt=""></a>
+            </div>
+            <div class="menunav">
+                <div class="topbar">
+                    <a href="tel:+1800545454"><span class="lnr lnr-phone-handset"></span>1800 54 54 54</a>
+                    <input type="search" name="" id="search" placeholder="Tìm kiếm"><span
+                        class="lnr lnr-magnifier"></span>
+                </div>
+                <div class="navbar">
+                    <i class=" fas fa-bars" onclick="toggleMenu()"></i>
+                    <ul class="nav">
+                        <li>
+                            <a href="#"><img class="logo" src="img/index/logo.png" alt=""><i class="fas fa-times"
+                                    onclick="CloseMenu()"></i></a>
+                        </li>
+                        <li><input type="search" name="" id="" placeholder="Tìm kiếm"></li>
+                        <li class=" nav-item"><a class="nav-link" href="ve-cindy.html">Về Cindy</a></li>
+                        <li class="nav-item"><a class="nav-link" href="san-pham.html">Sản phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kham-pha-mui-huong.html">Khám phá mùi hương</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="beauty-blogger-review.html">Beauty blogger
+                                review</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="tin-tuc-uu-dai.html">Tin tức - Ưu đãi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lien-he.html">Liên hệ</a></li>
+                        <li><a href="tel:+1800545454"><span class="lnr lnr-phone-handset"></span>1800 54 54 54</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="clear"></div>
+    <main>
+        <div class="wrapper-typing">
+            <h2 class="typing-demo" style="width: 370px; color: white">Gallery images</h2>
+        </div>
+        <div id="carousel">
+            <figure id="spinner">
+                <img src="/img/tintuc-uudai/bv1.png" alt>
+                <img src="/img/tintuc-uudai/bv2.png" alt>
+                <img src="/img/tintuc-uudai/bv3.png" alt>
+                <img src="/img/tintuc-uudai/bv4.png" alt>
+                <img src="/img/tintuc-uudai/bv5.png" alt>
+                <img src="/img/tintuc-uudai/bv6.png" alt>
+                <img src="/img/tintuc-uudai/bv7.png" alt>
+                <img src="/img/tintuc-uudai/bv8.png" alt>
+            </figure>
+        </div>
+        <p class="para">CINDY tin rằng sự tự tin và quyến rũ không phải là đích đến mà là một hành trình tìm kiếm nét
+            đẹp riêng của
+            mỗi người
+            phụ nữ. Và CINDY mong muốn được đồng hành cùng phụ nữ Việt trên hành trình đó.</p>
+        <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+        <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+    </main>
+    <div class="toppage">
+        <a href="#top-page" id="back-to-top" title="Back to top">
+            <p>TOP</p>
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+    <footer>
+        <article>
+            <h4>Về Cindy</h4>
+            <p><a href="/ve-cindy.html#story">Câu chuyện Cindy</a></p>
+            <p><a href="/ve-cindy.html#develop-stage">Giai đoạn phát triển</a></p>
+            <p><a href="/ve-cindy.html#channel">Cindy channel</a></p>
+        </article>
+        <article>
+            <h4>Liên kết nhanh</h4>
+            <p><a href="/beauty-blogger-review.html">Beauty Blogger review</a></p>
+            <p><a href="/tin-tuc-uu-dai.html">Tin tức - Ưu đãi</a></p>
+            <p><a href="/lien-he.html">Liên hệ</a></p>
+        </article>
+        <article>
+            <h4>Đăng ký nhận bảng tin</h4>
+            <div class="social-menu">
+                <ul>
+                    <li><a href="#"><i class="fab fa-github"></i></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-codepen"></i></a></li>
+                </ul>
+            </div>
+        </article>
+    </footer>
+    <div class="copyright">
+        <p>2018 by Canh Cam. All right reserved. designed by <a href="https://www.canhcam.vn/"></a></p>
+    </div>
+    <script>
+        var angle = 0;
+        function galleryspin(sign) {
+            spinner = document.querySelector("#spinner");
+            if (!sign) {
+                angle = angle + 45;
+            } else {
+                angle = angle - 45;
+            }
+            spinner.setAttribute("style", "-webkit-transform: rotateY(" + angle + "deg); -moz-transform: rotateY(" + angle + "deg); transform: rotateY(" + angle + "deg);");
+        }
+    </script>
+    <script src="js/togglemenu.js"></script>
+</body>
+
+</html>

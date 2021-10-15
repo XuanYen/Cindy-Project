@@ -428,7 +428,7 @@ article a:hover{
 }
 .typing-demo {
   width: 220px;
-  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(22) infinite, blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   font-size: 2em;
@@ -441,7 +441,8 @@ article a:hover{
     width: 0
   }
 }
-    
+
+   
 @keyframes blink {
   50% {
     border-color: transparent
